@@ -4,7 +4,7 @@
     <table name="pyz_antelope" idMethod="native" allowPkInsert="true" phpName="PyzAntelope">
         <column name="id_antelope" required="true" type="INTEGER" primaryKey="true" autoIncrement="true"/>
         <column name="name" required="true" type="VARCHAR" size="255"/>
-        <column name="fk_antelope_location" required="true" type="INTEGER"/>
+        <column name="fk_antelope_location" required="true" type="INTEGER" default="1"/>
 
         <unique name="pyz_antelope-name">
             <unique-column name="name"/>

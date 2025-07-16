@@ -4,6 +4,7 @@ namespace Pyz\Zed\Antelope\Business;
 
 
 use Generated\Shared\Transfer\AntelopeCriteriaTransfer;
+use Generated\Shared\Transfer\AntelopeLocationTransfer;
 use Generated\Shared\Transfer\AntelopeResponseTransfer;
 use Generated\Shared\Transfer\AntelopeTransfer;
 
@@ -18,4 +19,8 @@ interface AntelopeFacadeInterface
     public function getAntelope(
         AntelopeCriteriaTransfer $antelopeCriteriaTransfer
     ): AntelopeResponseTransfer;
+
+    public function  createAntelopeLocation(AntelopeLocationTransfer $antelopeLocationTransfer): AntelopeLocationTransfer;
+
+    public function getAntelopeLocationById(int $antelopeLocationId): ?AntelopeLocationTransfer;
 }
