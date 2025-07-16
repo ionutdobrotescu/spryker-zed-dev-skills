@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
-<transfers xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-           xmlns="spryker:transfer-01"
-           xsi:schemaLocation="spryker:transfer-01 http://static.spryker.com/transfer-01.xsd">
+<transfers xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="spryker:transfer-01" xsi:schemaLocation="spryker:transfer-01 http://static.spryker.com/transfer-01.xsd">
 
     <transfer name="Antelope">
         <property name="idAntelope" type="int"/>
+        <property name="fkAntelopeLocation" type="int"/>
         <property name="name" type="string"/>
+        <property name="LocationName" type="string"/>
     </transfer>
     <transfer name="AntelopeCriteria">
         <property name="name" type="string"/>
@@ -13,5 +13,10 @@
     <transfer name="AntelopeResponse">
         <property name="antelope" type="Antelope"/>
         <property name="isSuccessFul" type="bool"/>
+    </transfer>
+
+    <transfer name="AntelopeLocation">
+        <property name="idAntelopeLocation" type="int"/>
+        <property name="locationName" type="string"/>
     </transfer>
 </transfers>
